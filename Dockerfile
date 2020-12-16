@@ -1,4 +1,4 @@
-FROM node:8.9.4-stretch
+FROM node:8.17.0-stretch
 WORKDIR /opt/coin
 RUN apt update && apt install -y sqlite3
 RUN wget http://releases.ddn.link/2.0.4/ddn-linux-2.0.4-mainnet.tar.gz -O - | tar --strip-components 1 -xzf -
